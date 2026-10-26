@@ -110,10 +110,10 @@ void LoseSequence () {
 }
 void WinSequence () {
 	for (int i= 0; i< 5; i++) {
-		//Turn on white LED.
+		//Turn on sixth LED.
 		HAL_GPIO_WritePin (GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
 		HAL_Delay (500);
-		//Turn off white LED.
+		//Turn off sixth LED.
 		HAL_GPIO_WritePin (GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
 		HAL_Delay (500);
 	}
